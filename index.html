@@ -519,6 +519,48 @@
     }
     .faq-answer.open { max-height: 300px; padding: 0 24px 20px; }
 
+    /* REVIEWS / TESTIMONIALS */
+    .reviews-section { background: #fff; }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .review-card {
+      background: #f9f9f9;
+      border-radius: 14px;
+      padding: 28px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .review-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      object-fit: cover;
+    }
+    .review-name {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: var(--green-dark);
+      margin-bottom: 4px;
+      font-size: 15px;
+    }
+    .review-location {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 16px;
+    }
+    .review-text {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.8;
+      font-style: italic;
+    }
+
     /* FOOTER */
     footer {
       background: #1a1a1a;
@@ -605,6 +647,32 @@
     <div class="why-card">
       <h3>💸 Economia</h3>
       <p>Gaste até 70% menos fazendo seus próprios temperos com ingredientes simples do dia a dia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section">
+  <h2>O Que Estão Dizendo</h2>
+  <p style="text-align:center; margin-bottom:40px; color:#888; font-size:15px;">Veja o que pessoas como você já descobriram</p>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <img src="imagens/ava3.png" alt="Maria Clara S." class="review-avatar">
+      <div class="review-name">Maria Clara S.</div>
+      <div class="review-location">São Paulo, SP</div>
+      <p class="review-text">"Nunca imaginei que seria tão fácil! Minha família adorou o tempero caseiro de alho. A comida ficou muito mais saborosa e eu economizei bastante no mês."</p>
+    </div>
+    <div class="review-card">
+      <img src="imagens/ava2.jpg" alt="Ricardo Oliveira" class="review-avatar">
+      <div class="review-name">Ricardo Oliveira</div>
+      <div class="review-location">Belo Horizonte, MG</div>
+      <p class="review-text">"Estou usando todos no meu restaurante, os clientes e as cozinheiras aprovaram!!! Muito facil e pratico, e rende muito. Recomendo!"</p>
+    </div>
+    <div class="review-card">
+      <img src="imagens/ava1.jpg" alt="Juliana Mendes" class="review-avatar">
+      <div class="review-name">Juliana Mendes</div>
+      <div class="review-location">Curitiba, PR</div>
+      <p class="review-text">"Finalmente parei de comprar aqueles temperos cheios de sódio. Agora sei exatamente o que estou colocando na comida da minha família. Super recomendo!"</p>
     </div>
   </div>
 </section>
